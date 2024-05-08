@@ -49,7 +49,7 @@ function saveTasksToStorage(tasks) {
 function createTaskCard(task) {
      
     // What comes next(?) --> Waht do we need to SHOW DATA on the screen(?) | Dynamic CREATE new Content - Rendering
-    let wrapper = $('<div>').addClass('card task-card draggable').attr('data-task-id', task.id);;
+    let wrapper = $('<div>').addClass('card task-card card-wrapper draggable').attr('data-task-id', task.id);;
     let titleCard = $('<h2>').text(task.title);
     let descriptionCard = $('<p>').text(task.description)
     let dueDateCard = $('<p>').text(task.dueDate)
